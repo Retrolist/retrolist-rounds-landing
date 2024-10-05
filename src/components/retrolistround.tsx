@@ -62,7 +62,7 @@ export const RetrolistRound = ({
         <div className="mt-1 text-[#4C4E64AD] text-lg">{date}</div>
       </a>
       <hr className="border-[#4C4E641F] mt-3 mb-5" />
-      <div className="grid grid-cols-4 gap-5">
+      <div className="grid lg:grid-cols-4 grid-cols-2 gap-5">
         <OPStatsCard title="Projects rewarded" value={projectRewarded} />
         <OPStatsCard title="Total OP" value={totalOP} hasIconOP />
         <OPStatsCard
