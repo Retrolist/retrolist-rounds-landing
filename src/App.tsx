@@ -54,7 +54,7 @@ function App() {
               />
               <div className="absolute top-10 left-10">
                 <div className="text-[#111111] text-[64px] font-semibold">
-                  60,815,042 OP
+                  51,000,000 OP
                 </div>
                 <div className="mt-3 text-2xl text-[#333333]">
                   Retro Funding rewarded to Optimism Collective contributors
@@ -73,7 +73,7 @@ function App() {
                   className="w-full h-full object-cover rounded-3xl"
                 />
                 <div className="w-full h-full bg-gradient-to-b from-[#00000000] to-[#000000] rounded-3xl top-0 absolute" />
-                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 hidden">
                   <div className="text-center">
                     <div className="flex gap-2 justify-center">
                       <div className="text-3xl font-semibold text-white">
@@ -88,9 +88,9 @@ function App() {
                 </div>
               </div>
               <div className="w-full h-1/2 bg-gradient-to-b from-[#F8959F] to-[#51B8E3] rounded-3xl flex justify-center items-center flex-col">
-                <div className="text-[64px] font-semibold text-white">7</div>
+                <div className="text-[64px] font-semibold text-white">6</div>
                 <div className="text-[32px] font-semibold text-white">
-                  Round
+                  Rounds
                 </div>
               </div>
             </div>
