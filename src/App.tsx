@@ -114,7 +114,7 @@ function App() {
                   className="w-full h-full object-cover rounded-3xl"
                 />
                 <div className="w-full h-full bg-gradient-to-b from-[#00000000] to-[#000000] rounded-3xl top-0 absolute" />
-                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 hidden">
                   <div className="text-center">
                     <div className="flex gap-2 justify-center">
                       <div className="text-3xl font-semibold text-white">
@@ -145,22 +145,24 @@ function App() {
             <RetrolistRound
               link="https://round6.retrolist.app"
               title="Round 6: Governance"
-              date="Nov 6 - Dec 7, 2024"
+              date="Oct 1 - Nov 7, 2024"
+              votingPeriod="Oct 28 - Nov 7, 2024"
               medianFundingAwarded="21,266"
-              projectRewarded="234"
+              projectRewarded="40+"
               topCategories="DeFi"
-              totalOP="10M"
+              totalOP="1.1M - 3.5M"
               isLive
             />
 
             <RetrolistRound
               link="https://round5.retrolist.app"
               title="Round 5: OP Stack"
-              date="Nov 6 - Dec 7, 2024"
+              date="Aug 22 - Oct 14, 2024"
+              votingPeriod="Sep 30 - Oct 14, 2024"
               medianFundingAwarded="21,266"
-              projectRewarded="234"
-              topCategories="DeFi"
-              totalOP="10M"
+              projectRewarded="79"
+              topCategories=""
+              totalOP="2M - 8M"
               isLive
             />
 
