@@ -9,17 +9,22 @@ const link = [
   // "https://round7.retrolist.app/",
 ];
 function App() {
-  const [isOpen, setIsOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
   return (
     <>
       <div className="relative">
         <div className="w-full absolute">
-          <div className="max-w-7xl mx-auto py-4 relative">
+          <div className="max-w-7xl lg:mx-auto py-4 relative flex justify-between items-center mx-4 gap-3">
             <div className="">
               <img src="/logo.svg" alt="" />
             </div>
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex gap-5 text-[#272930DE] font-semibold">
-              <div className="p-3">Home</div>
+            <div className="lg:absolute lg:top-1/2 lg:left-1/2 lg:-translate-x-1/2 lg:-translate-y-1/2 flex gap-3 text-[#272930DE] font-semibold items-center">
+              <div className="p-3 lg:block hidden">Home</div>
+              <a href="/" className="flex lg:hidden">
+                <img src="/home.svg" alt="" />
+              </a>
+              <div className="border-l-2 border-[#4C4E641F] h-8"></div>
+
               <div
                 className="p-3 flex gap-2 items-center relative cursor-pointer"
                 onMouseEnter={() => setIsOpen(true)}
@@ -59,12 +64,12 @@ function App() {
         <img
           src="/gang-star.svg"
           alt=""
-          className="absolute -bottom-20 left-0 moveUpDown -z-20"
+          className="absolute -bottom-20 left-0 moveUpDown -z-20 md:block hidden"
         />
         <img
           src="/retrolist-mascot.svg"
           alt=""
-          className="absolute top-1/2 -translate-y-1/2 right-0 -z-20"
+          className="absolute top-1/2 -translate-y-1/2 right-0 -z-20 md:block hidden"
         />
         <div className="w-full max-w-7xl mx-auto h-full mt-28 top-0 left-1/2 -translate-x-1/2 absolute -z-10 px-4">
           <div className="w-full">
@@ -79,10 +84,10 @@ function App() {
             </h3>
           </div>
           <div className="lg:h-[465px] h-auto flex lg:flex-nowrap flex-wrap gap-4 w-full mt-[31px]">
-            <div className="relative lg:w-3/6 w-full">
+            <div className="relative lg:w-3/6 w-full bg-white rounded-3xl">
               <img
                 src="/image/retrofunding-reward.png"
-                className="w-full h-full object-cover rounded-3xl"
+                className="w-full lg:h-full h-[465px] object-cover rounded-3xl"
                 alt=""
               />
               <div className="absolute top-10 left-10">

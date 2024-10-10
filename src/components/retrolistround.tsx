@@ -38,31 +38,40 @@ export const RetrolistRound = ({
 
   return (
     <div>
-      <a href={link}>
+      <div>
         <div className="flex items-center justify-between">
-          <div className="flex gap-3">
+          <div className="flex gap-3 w-full items-center">
             <div className="text-[#272930DE] text-3xl font-semibold">
               {title}
             </div>
-            <div
-              className={`py-1 px-3 gap-1.5 flex border ${colorClasses.border} ${colorClasses.bg} rounded-full items-center`}
-            >
-              <div className={`w-2 h-2 rounded-full ${colorClasses.dotBg}`} />
-              <div className={`text-sm font-medium ${colorClasses.text}`}>
-                {isLive ? "Live" : "Passed"}
+            <div>
+              <div
+                className={`py-1 px-3 gap-1.5 flex border ${colorClasses.border} ${colorClasses.bg} rounded-full items-center`}
+              >
+                <div className={`w-2 h-2 rounded-full ${colorClasses.dotBg}`} />
+                <div className={`text-sm font-medium ${colorClasses.text}`}>
+                  {isLive ? "Live" : "Passed"}
+                </div>
               </div>
             </div>
           </div>
           <a
             href={link}
-            className="py-2.5 px-3.5 flex gap-1 rounded-full border border-[#D92D20] bg-[#F04438] text-white"
+            className="py-2.5 px-3.5 gap-1 rounded-full border border-[#D92D20] bg-[#F04438] text-white lg:flex hidden shrink-0 transition hover:scale-105"
           >
             <div>View projects</div>
             <img src="/chevron-right.svg" alt="" />
           </a>
         </div>
         <div className="mt-1 text-[#4C4E64AD] text-lg">{date}</div>
-      </a>
+        <a
+          href={link}
+          className="py-2.5 px-3.5 gap-1 rounded-full border border-[#D92D20] bg-[#F04438] text-white flex lg:hidden justify-center mt-4 mb-3"
+        >
+          <div>View project</div>
+          <img src="/chevron-right.svg" alt="" />
+        </a>
+      </div>
       <hr className="border-[#4C4E641F] mt-3 mb-5" />
       <div className="grid lg:grid-cols-4 grid-cols-2 gap-5">
         <OPStatsCard title={isLive ? "Projects" : "Projects Rewarded"} value={projectRewarded} />
