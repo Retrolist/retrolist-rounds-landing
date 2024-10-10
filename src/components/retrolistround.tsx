@@ -5,6 +5,7 @@ interface RetrolistRoundProps {
   title: string;
   isLive?: boolean;
   date: string;
+  votingPeriod?: string;
   projectRewarded: string;
   totalOP: string;
   medianFundingAwarded: string;
@@ -18,6 +19,7 @@ export const RetrolistRound = ({
   projectRewarded,
   topCategories,
   date,
+  votingPeriod,
   totalOP,
 }: RetrolistRoundProps) => {
   const colorClasses = isLive
@@ -52,10 +54,10 @@ export const RetrolistRound = ({
             </div>
           </div>
           <a
-            href=""
+            href={link}
             className="py-2.5 px-3.5 flex gap-1 rounded-full border border-[#D92D20] bg-[#F04438] text-white"
           >
-            <div>View project</div>
+            <div>View projects</div>
             <img src="/chevron-right.svg" alt="" />
           </a>
         </div>
@@ -63,14 +65,22 @@ export const RetrolistRound = ({
       </a>
       <hr className="border-[#4C4E641F] mt-3 mb-5" />
       <div className="grid lg:grid-cols-4 grid-cols-2 gap-5">
-        <OPStatsCard title="Projects rewarded" value={projectRewarded} />
+        <OPStatsCard title={isLive ? "Projects" : "Projects Rewarded"} value={projectRewarded} />
         <OPStatsCard title="Total OP" value={totalOP} hasIconOP />
-        <OPStatsCard
-          title="Median Funding Awarded"
-          value={medianFundingAwarded}
-          hasIconOP
-        />
-        <OPStatsCard title="Top Categories" value={topCategories} />
+        {isLive ? (
+          <div className="col-span-2">
+            <OPStatsCard title="Voting Period" value={votingPeriod || date} />
+          </div>
+        ) : (
+          <>
+            <OPStatsCard
+              title="Median Funding Awarded"
+              value={medianFundingAwarded}
+              hasIconOP
+            />
+            <OPStatsCard title="Top Categories" value={topCategories} size="2xl" />
+          </>
+        )}
       </div>
     </div>
   );
