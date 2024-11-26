@@ -74,7 +74,10 @@ export const RetrolistRound = ({
       </div>
       <hr className="border-[#4C4E641F] mt-3 mb-5" />
       <div className="grid lg:grid-cols-4 grid-cols-2 gap-5">
-        <OPStatsCard title={isLive ? "Projects" : "Projects Rewarded"} value={projectRewarded} />
+        <OPStatsCard
+          title={isLive ? "Projects" : "Projects Rewarded"}
+          value={projectRewarded}
+        />
         <OPStatsCard title="Total OP" value={totalOP} hasIconOP />
         {isLive ? (
           <div className="col-span-2">
@@ -87,7 +90,11 @@ export const RetrolistRound = ({
               value={medianFundingAwarded}
               hasIconOP
             />
-            <OPStatsCard title="Top Categories" value={topCategories} size="2xl" />
+            <OPStatsCard
+              title="Top Categories"
+              value={topCategories}
+              size="2xl"
+            />
           </>
         )}
       </div>

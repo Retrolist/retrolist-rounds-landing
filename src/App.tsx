@@ -148,7 +148,7 @@ function App() {
               date="Oct 1 - Nov 13, 2024"
               votingPeriod="Oct 31 - Nov 13, 2024"
               medianFundingAwarded="21,266"
-              projectRewarded="85"
+              projectRewarded="88"
               topCategories="DeFi"
               totalOP="1.1M - 3.5M"
               isLive
