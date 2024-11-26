@@ -146,7 +146,7 @@ function App() {
               link="https://round6.retrolist.app"
               title="Round 6: Governance"
               date="Oct 1 - Nov 13, 2024"
-              votingPeriod="Oct 31 - Nov 13, 2024"
+              votingPeriod="Oct 28 - Nov 13, 2024"
               medianFundingAwarded="21,266"
               projectRewarded="88"
               topCategories="DeFi"
