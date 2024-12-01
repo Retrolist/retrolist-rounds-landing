@@ -159,11 +159,10 @@ function App() {
               title="Round 5: OP Stack"
               date="Aug 22 - Oct 14, 2024"
               votingPeriod="Sep 30 - Oct 14, 2024"
-              medianFundingAwarded="21,266"
+              medianFundingAwarded="92,603"
               projectRewarded="79"
-              topCategories=""
-              totalOP="2M - 8M"
-              isLive
+              topCategories="ETH Core Contribution"
+              totalOP="8M"
             />
 
             <RetrolistRound
