@@ -149,9 +149,8 @@ function App() {
               votingPeriod="Oct 28 - Nov 13, 2024"
               medianFundingAwarded="21,266"
               projectRewarded="88"
-              topCategories="DeFi"
-              totalOP="1.1M - 3.5M"
-              isLive
+              topCategories="Governance Infra & Tooling"
+              totalOP="2.4M"
             />
 
             <RetrolistRound
