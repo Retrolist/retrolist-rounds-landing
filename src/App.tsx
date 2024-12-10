@@ -147,11 +147,10 @@ function App() {
               title="Round 6: Governance"
               date="Oct 1 - Nov 13, 2024"
               votingPeriod="Oct 28 - Nov 13, 2024"
-              medianFundingAwarded="21,266"
+              medianFundingAwarded="22,883"
               projectRewarded="88"
-              topCategories="DeFi"
-              totalOP="1.1M - 3.5M"
-              isLive
+              topCategories="Gov Infra & Tooling"
+              totalOP="2.4M"
             />
 
             <RetrolistRound
