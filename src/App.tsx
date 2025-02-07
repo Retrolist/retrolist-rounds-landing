@@ -129,7 +129,7 @@ function App() {
                 </div>
               </div>
               <div className="w-full h-1/2 bg-gradient-to-b from-[#F8959F] to-[#51B8E3] rounded-3xl flex justify-center items-center flex-col">
-                <div className="text-[64px] font-semibold text-white">6</div>
+                <div className="text-[64px] font-semibold text-white">8</div>
                 <div className="text-[32px] font-semibold text-white">
                   Rounds
                 </div>
@@ -158,7 +158,7 @@ function App() {
               link="https://s7-devtool.retrolist.app"
               title="Season 7: Dev Tooling"
               date="Feb 5 - Jul 31, 2025"
-              votingPeriod="Oct 28 - Nov 13, 2024"
+              votingPeriod="Feb 5 - Jul 31, 2025"
               medianFundingAwarded=""
               projectRewarded="..."
               topCategories=""
