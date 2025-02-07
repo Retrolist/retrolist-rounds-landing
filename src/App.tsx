@@ -92,10 +92,10 @@ function App() {
               />
               <div className="absolute top-10 left-10">
                 <div className="text-[#111111] text-[64px] font-semibold md:block hidden">
-                  51,000,000 OP
+                  59,400,000 OP
                 </div>
                 <div className="text-[#111111] text-[64px] font-semibold md:hidden block">
-                  51M OP
+                  59.4M OP
                 </div>
                 <div className="mt-3 text-2xl text-[#333333]">
                   Retro Funding rewarded to Optimism Collective contributors
@@ -142,6 +142,30 @@ function App() {
             />
           </div>
           <div className="mx-auto pb-10 flex-col flex gap-8  mt-8">
+            {/* <RetrolistRound
+              link="https://s7-onchain.retrolist.app"
+              title="Season 7: Onchain Builders"
+              date="Feb 13 - Jul 31, 2025"
+              votingPeriod="Oct 28 - Nov 13, 2024"
+              medianFundingAwarded=""
+              projectRewarded="..."
+              topCategories="Gov Infra & Tooling"
+              totalOP="Up to 8M"
+              isLive
+            /> */}
+
+            <RetrolistRound
+              link="https://s7-devtool.retrolist.app"
+              title="Season 7: Dev Tooling"
+              date="Feb 5 - Jul 31, 2025"
+              votingPeriod="Oct 28 - Nov 13, 2024"
+              medianFundingAwarded=""
+              projectRewarded="..."
+              topCategories=""
+              totalOP="Up to 8M"
+              isLive
+            />
+
             <RetrolistRound
               link="https://round6.retrolist.app"
               title="Round 6: Governance"
