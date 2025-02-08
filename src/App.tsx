@@ -160,7 +160,7 @@ function App() {
               date="Feb 5 - Jul 31, 2025"
               votingPeriod="Feb 5 - Jul 31, 2025"
               medianFundingAwarded=""
-              projectRewarded="..."
+              projectRewarded="https://s7-api.retrolist.app/7/projects/count"
               topCategories=""
               totalOP="Up to 8M"
               isLive

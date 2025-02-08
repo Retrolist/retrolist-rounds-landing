@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import { OPStatsCard } from "./opstatscard";
 
 interface RetrolistRoundProps {
@@ -22,6 +23,21 @@ export const RetrolistRound = ({
   votingPeriod,
   totalOP,
 }: RetrolistRoundProps) => {
+  const [projectRewardedParsed, setProjectRewardedParsed] = useState(projectRewarded.startsWith("http") ? "..." : projectRewarded);
+
+  useEffect(() => {
+    if (projectRewarded.startsWith("http")) {
+      setProjectRewardedParsed("...");
+
+      // Fetch the project data from the link
+      fetch(projectRewarded)
+        .then((res) => res.json())
+        .then((data) => {
+          setProjectRewardedParsed(data.eligible || data.total);
+        });
+    }
+  }, [projectRewarded]);
+
   const colorClasses = isLive
     ? {
         border: "border-red-200",
@@ -76,7 +92,7 @@ export const RetrolistRound = ({
       <div className="grid lg:grid-cols-4 grid-cols-2 gap-5">
         <OPStatsCard
           title={isLive ? "Projects" : "Projects Rewarded"}
-          value={projectRewarded}
+          value={projectRewardedParsed}
         />
         <OPStatsCard title="Total OP" value={totalOP} hasIconOP />
         {isLive ? (
