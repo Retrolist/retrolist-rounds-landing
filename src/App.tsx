@@ -142,17 +142,17 @@ function App() {
             />
           </div>
           <div className="mx-auto pb-10 flex-col flex gap-8  mt-8">
-            {/* <RetrolistRound
+            <RetrolistRound
               link="https://s7-onchain.retrolist.app"
               title="Season 7: Onchain Builders"
-              date="Feb 13 - Jul 31, 2025"
-              votingPeriod="Oct 28 - Nov 13, 2024"
+              date="Feb 18 - Jul 31, 2025"
+              votingPeriod="Feb 18 - Jul 31, 2025"
               medianFundingAwarded=""
-              projectRewarded="..."
-              topCategories="Gov Infra & Tooling"
+              projectRewarded="https://s7-api.retrolist.app/8/projects/count"
+              topCategories=""
               totalOP="Up to 8M"
               isLive
-            /> */}
+            />
 
             <RetrolistRound
               link="https://s7-devtool.retrolist.app"
