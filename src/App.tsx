@@ -6,6 +6,8 @@ const link = [
   "https://round4.retrolist.app/",
   "https://round5.retrolist.app/",
   "https://round6.retrolist.app/",
+  "https://s7-devtool.retrolist.app/",
+  "https://s7-onchain.retrolist.app/",
   // "https://round7.retrolist.app/",
 ];
 function App() {
